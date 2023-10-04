@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <title>Our location</title>
+</head>
+
+<body>
+    <main>
+        <div class="map-section" id="map">
+            <div class="map-section__inner">
+                <div class="btn row-reverse">
+                    <a href="./our-location.html" class="btn-text">our location</a>
+                    <a href="#" class="btn-arrow"><img src="./assets/icon-arrow-left.svg" alt="btn-arrow"></a>
+                </div>
+            </div>
+        </div>
+        <div class="our-location">
+            <div class="our-location__inner">
+                <div class="our-location__title">
+                    <h1>Our location</h1>
+                </div>
+                <div class="our-location__text">
+                    <h2>99 king street</h2>
+                    <ul>
+                        <li>Newport</li>
+                        <li>RI 02840</li>
+                        <li>United States of America</li>
+                    </ul>
+                    <p>Our newly opened gallery is located near the Edward King House on 99 King Street, the Modern Art
+                        Gallery is free to all visitors and open seven days a week from 8am to 9pm.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-gold">
+        <div class="footer__inner ">
+            <div class="footer__wrap">
+                <a href="index.html" class="footer__logo text-dark"><img src="./assets/logo-dark.svg"
+                        alt="logo-light"></a>
+                <p class="footer__text text-dark">The Modern Art Gallery is free to all visitors and open seven days a
+                    week from
+                    8am to 9pm. Find us at
+                    99
+                    King Street, Newport, USA.</p>
+            </div>
+            <div class="footer__socials">
+                <a href="#"><i class="fa-brands fa-square-facebook text-dark hover-white"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-dark hover-white"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-dark hover-white"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <script src="map.js"></script>
+</body>
+
+</html>

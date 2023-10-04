@@ -1,0 +1,85 @@
+@use '../abstracts/variables.scss' as *;
+@use '../abstracts/mixins.scss' as *;
+
+.footer {
+    background-color: $color-base-terietry;
+    padding-block: 5rem;
+
+    @include SM-styles {
+        padding-block: 3rem;
+    }
+
+    .footer__inner {
+        max-width: 72.75rem;
+        margin: 0 auto;
+        padding-inline: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        @include SM-styles {
+            flex-direction: column;
+        }
+    }
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: flex-start;
+
+
+    @include SM-styles {
+        flex-direction: column;
+        margin-bottom: 2.25rem;
+    }
+
+    .footer__logo {
+        width: 159px;
+        margin-right: 8.75rem;
+
+        @include MD-styles {
+            width: 110px;
+            margin-right: 4rem;
+        }
+
+        @include SM-styles {
+            margin-right: 0;
+            margin-bottom: 2.25rem;
+        }
+    }
+
+    .footer__text {
+        color: $color-base-secondary;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-large;
+        line-height: 28px;
+        width: 40%;
+
+        @include MD-styles {
+            width: 50%;
+        }
+
+        @include SM-styles {
+            width: 100%;
+        }
+    }
+}
+
+.footer__socials {
+    display: flex;
+    align-items: flex-start;
+
+    a {
+        color: $color-base-secondary;
+        font-size: 1.5rem;
+        transition: color 300ms ease-in-out;
+
+        &:not(:last-child) {
+            margin-right: 1.25rem;
+        }
+
+        &:hover {
+            color: $color-base-quintary;
+        }
+
+    }
+}
